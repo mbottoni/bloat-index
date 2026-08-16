@@ -1,0 +1,29 @@
+name: test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install
+        run: |
+          uv venv .venv --python 3.12
+          uv pip install --python .venv/bin/python tiktoken pytest
+
+      - name: Test
+        run: .venv/bin/python -m pytest tests/ -q
+
+      # The stdlib adapter needs no third-party install, so it is a cheap
+      # end-to-end check that the recording server and the harness still agree.
+      - name: Smoke-test the harness end to end
+        run: .venv/bin/python -m bloatindex.measure stdlib --repeats 1 --out /tmp/smoke.json

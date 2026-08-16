@@ -1,0 +1,7 @@
+{
+  "name": "smolagents",
+  "display": "smolagents",
+  "homepage": "https://github.com/huggingface/smolagents",
+  "import_module": "smolagents",
+  "note": "ToolCallingAgent with the base toolbox disabled, matching the shared task."
+}

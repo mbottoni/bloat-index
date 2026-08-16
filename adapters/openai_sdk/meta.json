@@ -1,0 +1,7 @@
+{
+  "name": "openai_sdk",
+  "display": "openai (SDK only)",
+  "homepage": "https://github.com/openai/openai-python",
+  "import_module": "openai",
+  "note": "The official client with a hand-written loop. No agent framework."
+}

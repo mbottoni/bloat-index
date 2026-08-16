@@ -1,0 +1,151 @@
+{
+  "task_prompt": "What is the weather in Sao Paulo?",
+  "expected_answer_contains": "22C",
+  "note": "Every adapter must send these tools verbatim and this prompt verbatim. Adapters translate the schema into their framework's own tool type, but must not rename, reword, or drop fields -- the whole comparison rests on each framework receiving identical input.",
+  "tools": [
+    {
+      "name": "get_weather",
+      "description": "Get the current weather for a city.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "city": {"type": "string", "description": "City name, e.g. Sao Paulo"}
+        },
+        "required": ["city"]
+      }
+    },
+    {
+      "name": "add",
+      "description": "Add two numbers and return the sum.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "a": {"type": "number", "description": "First addend"},
+          "b": {"type": "number", "description": "Second addend"}
+        },
+        "required": ["a", "b"]
+      }
+    },
+    {
+      "name": "search_documents",
+      "description": "Search the internal document store for a query string.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {"type": "string", "description": "Search query"},
+          "top_k": {"type": "integer", "description": "Number of results to return"}
+        },
+        "required": ["query"]
+      }
+    },
+    {
+      "name": "send_email",
+      "description": "Send an email to a recipient.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "to": {"type": "string", "description": "Recipient email address"},
+          "subject": {"type": "string", "description": "Email subject line"},
+          "body": {"type": "string", "description": "Email body text"}
+        },
+        "required": ["to", "subject", "body"]
+      }
+    },
+    {
+      "name": "create_calendar_event",
+      "description": "Create an event on the user's calendar.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "title": {"type": "string", "description": "Event title"},
+          "start": {"type": "string", "description": "ISO 8601 start timestamp"},
+          "duration_minutes": {"type": "integer", "description": "Length in minutes"}
+        },
+        "required": ["title", "start"]
+      }
+    },
+    {
+      "name": "query_database",
+      "description": "Run a read-only SQL query against the analytics database.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sql": {"type": "string", "description": "A SELECT statement"},
+          "limit": {"type": "integer", "description": "Maximum rows to return"}
+        },
+        "required": ["sql"]
+      }
+    },
+    {
+      "name": "convert_currency",
+      "description": "Convert an amount from one currency to another.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "amount": {"type": "number", "description": "Amount to convert"},
+          "from_currency": {"type": "string", "description": "ISO 4217 source code"},
+          "to_currency": {"type": "string", "description": "ISO 4217 target code"}
+        },
+        "required": ["amount", "from_currency", "to_currency"]
+      }
+    },
+    {
+      "name": "read_file",
+      "description": "Read the contents of a file from the workspace.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": {"type": "string", "description": "Path relative to the workspace root"}
+        },
+        "required": ["path"]
+      }
+    },
+    {
+      "name": "write_file",
+      "description": "Write text content to a file in the workspace.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": {"type": "string", "description": "Path relative to the workspace root"},
+          "content": {"type": "string", "description": "Text to write"}
+        },
+        "required": ["path", "content"]
+      }
+    },
+    {
+      "name": "list_directory",
+      "description": "List the files in a workspace directory.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": {"type": "string", "description": "Directory path"}
+        },
+        "required": ["path"]
+      }
+    },
+    {
+      "name": "translate_text",
+      "description": "Translate text into a target language.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {"type": "string", "description": "Text to translate"},
+          "target_language": {"type": "string", "description": "Target language name"}
+        },
+        "required": ["text", "target_language"]
+      }
+    },
+    {
+      "name": "summarize_url",
+      "description": "Fetch a web page and return a short summary of it.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "url": {"type": "string", "description": "Absolute http(s) URL"},
+          "max_sentences": {"type": "integer", "description": "Summary length cap"}
+        },
+        "required": ["url"]
+      }
+    }
+  ]
+}

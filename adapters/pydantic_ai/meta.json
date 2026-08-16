@@ -1,0 +1,7 @@
+{
+  "name": "pydantic_ai",
+  "display": "pydantic-ai",
+  "homepage": "https://github.com/pydantic/pydantic-ai",
+  "import_module": "pydantic_ai",
+  "note": "Measured as pydantic-ai-slim, the minimal install the docs recommend."
+}

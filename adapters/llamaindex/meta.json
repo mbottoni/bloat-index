@@ -1,0 +1,7 @@
+{
+  "name": "llamaindex",
+  "display": "llama-index",
+  "homepage": "https://github.com/run-llama/llama_index",
+  "import_module": "llama_index.core.agent.workflow",
+  "note": "llama-index-core plus the OpenAI LLM binding, not the full meta-package."
+}

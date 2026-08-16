@@ -1,0 +1,1271 @@
+{
+  "spec": {
+    "task_prompt": "What is the weather in Sao Paulo?",
+    "expected_answer_contains": "22C",
+    "note": "Every adapter must send these tools verbatim and this prompt verbatim. Adapters translate the schema into their framework's own tool type, but must not rename, reword, or drop fields -- the whole comparison rests on each framework receiving identical input.",
+    "tools": [
+      {
+        "name": "get_weather",
+        "description": "Get the current weather for a city.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "city": {
+              "type": "string",
+              "description": "City name, e.g. Sao Paulo"
+            }
+          },
+          "required": [
+            "city"
+          ]
+        }
+      },
+      {
+        "name": "add",
+        "description": "Add two numbers and return the sum.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "type": "number",
+              "description": "First addend"
+            },
+            "b": {
+              "type": "number",
+              "description": "Second addend"
+            }
+          },
+          "required": [
+            "a",
+            "b"
+          ]
+        }
+      },
+      {
+        "name": "search_documents",
+        "description": "Search the internal document store for a query string.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "description": "Search query"
+            },
+            "top_k": {
+              "type": "integer",
+              "description": "Number of results to return"
+            }
+          },
+          "required": [
+            "query"
+          ]
+        }
+      },
+      {
+        "name": "send_email",
+        "description": "Send an email to a recipient.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "to": {
+              "type": "string",
+              "description": "Recipient email address"
+            },
+            "subject": {
+              "type": "string",
+              "description": "Email subject line"
+            },
+            "body": {
+              "type": "string",
+              "description": "Email body text"
+            }
+          },
+          "required": [
+            "to",
+            "subject",
+            "body"
+          ]
+        }
+      },
+      {
+        "name": "create_calendar_event",
+        "description": "Create an event on the user's calendar.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "description": "Event title"
+            },
+            "start": {
+              "type": "string",
+              "description": "ISO 8601 start timestamp"
+            },
+            "duration_minutes": {
+              "type": "integer",
+              "description": "Length in minutes"
+            }
+          },
+          "required": [
+            "title",
+            "start"
+          ]
+        }
+      },
+      {
+        "name": "query_database",
+        "description": "Run a read-only SQL query against the analytics database.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "sql": {
+              "type": "string",
+              "description": "A SELECT statement"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum rows to return"
+            }
+          },
+          "required": [
+            "sql"
+          ]
+        }
+      },
+      {
+        "name": "convert_currency",
+        "description": "Convert an amount from one currency to another.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number",
+              "description": "Amount to convert"
+            },
+            "from_currency": {
+              "type": "string",
+              "description": "ISO 4217 source code"
+            },
+            "to_currency": {
+              "type": "string",
+              "description": "ISO 4217 target code"
+            }
+          },
+          "required": [
+            "amount",
+            "from_currency",
+            "to_currency"
+          ]
+        }
+      },
+      {
+        "name": "read_file",
+        "description": "Read the contents of a file from the workspace.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "description": "Path relative to the workspace root"
+            }
+          },
+          "required": [
+            "path"
+          ]
+        }
+      },
+      {
+        "name": "write_file",
+        "description": "Write text content to a file in the workspace.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "description": "Path relative to the workspace root"
+            },
+            "content": {
+              "type": "string",
+              "description": "Text to write"
+            }
+          },
+          "required": [
+            "path",
+            "content"
+          ]
+        }
+      },
+      {
+        "name": "list_directory",
+        "description": "List the files in a workspace directory.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "description": "Directory path"
+            }
+          },
+          "required": [
+            "path"
+          ]
+        }
+      },
+      {
+        "name": "translate_text",
+        "description": "Translate text into a target language.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string",
+              "description": "Text to translate"
+            },
+            "target_language": {
+              "type": "string",
+              "description": "Target language name"
+            }
+          },
+          "required": [
+            "text",
+            "target_language"
+          ]
+        }
+      },
+      {
+        "name": "summarize_url",
+        "description": "Fetch a web page and return a short summary of it.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "Absolute http(s) URL"
+            },
+            "max_sentences": {
+              "type": "integer",
+              "description": "Summary length cap"
+            }
+          },
+          "required": [
+            "url"
+          ]
+        }
+      }
+    ]
+  },
+  "config": {
+    "n_tools": 2,
+    "repeats": 3,
+    "python": "3.12",
+    "tokenizer": "o200k_base",
+    "import_samples": 5
+  },
+  "results": [
+    {
+      "name": "crewai",
+      "display": "crewai",
+      "homepage": "https://github.com/crewAIInc/crewAI",
+      "note": "Role/goal/backstory fields are mandatory, and are kept as short as the API allows.",
+      "ok": true,
+      "error": "",
+      "n_deps": 135,
+      "install_bytes": 580690200,
+      "import_ms": 1424.3,
+      "import_ms_range": [
+        1368.3,
+        1837.2
+      ],
+      "loc": 51,
+      "install_seconds": 0.1,
+      "tokens": {
+        "n_requests": {
+          "median": 2,
+          "min": 2,
+          "max": 2
+        },
+        "first_request": {
+          "total": {
+            "median": 200,
+            "min": 200,
+            "max": 200
+          },
+          "overhead": {
+            "median": 192,
+            "min": 192,
+            "max": 192
+          },
+          "task": {
+            "median": 8,
+            "min": 8,
+            "max": 8
+          },
+          "tool_schemas": {
+            "median": 135,
+            "min": 135,
+            "max": 135
+          },
+          "system": {
+            "median": 24,
+            "min": 24,
+            "max": 24
+          },
+          "scaffold": {
+            "median": 33,
+            "min": 33,
+            "max": 33
+          },
+          "history": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "episode": {
+          "total": {
+            "median": 443,
+            "min": 443,
+            "max": 443
+          },
+          "overhead": {
+            "median": 427,
+            "min": 427,
+            "max": 427
+          },
+          "task": {
+            "median": 16,
+            "min": 16,
+            "max": 16
+          },
+          "tool_schemas": {
+            "median": 270,
+            "min": 270,
+            "max": 270
+          },
+          "system": {
+            "median": 48,
+            "min": 48,
+            "max": 48
+          },
+          "scaffold": {
+            "median": 66,
+            "min": 66,
+            "max": 66
+          },
+          "history": {
+            "median": 43,
+            "min": 43,
+            "max": 43
+          }
+        },
+        "sample": {
+          "n_requests": 2,
+          "first_request": {
+            "total": 200,
+            "tool_schemas": 135,
+            "system": 24,
+            "history": 0,
+            "scaffold": 33,
+            "task": 8,
+            "overhead": 192,
+            "overhead_pct": 96.0
+          },
+          "episode": {
+            "total": 443,
+            "overhead": 427,
+            "task": 16,
+            "tool_schemas": 270,
+            "system": 48,
+            "history": 43,
+            "scaffold": 66
+          },
+          "per_request": [
+            {
+              "total": 200,
+              "tool_schemas": 135,
+              "system": 24,
+              "history": 0,
+              "scaffold": 33,
+              "task": 8,
+              "overhead": 192,
+              "overhead_pct": 96.0
+            },
+            {
+              "total": 243,
+              "tool_schemas": 135,
+              "system": 24,
+              "history": 43,
+              "scaffold": 33,
+              "task": 8,
+              "overhead": 235,
+              "overhead_pct": 96.7
+            }
+          ]
+        }
+      },
+      "answer_ok": true,
+      "n_runs": 3
+    },
+    {
+      "name": "langchain",
+      "display": "langchain + langgraph",
+      "homepage": "https://github.com/langchain-ai/langchain",
+      "note": "Prebuilt ReAct agent, the path the documentation steers you to.",
+      "ok": true,
+      "error": "",
+      "n_deps": 45,
+      "install_bytes": 37931715,
+      "import_ms": 425.5,
+      "import_ms_range": [
+        380.3,
+        589.8
+      ],
+      "loc": 51,
+      "install_seconds": 0.1,
+      "tokens": {
+        "n_requests": {
+          "median": 2,
+          "min": 2,
+          "max": 2
+        },
+        "first_request": {
+          "total": {
+            "median": 125,
+            "min": 125,
+            "max": 125
+          },
+          "overhead": {
+            "median": 117,
+            "min": 117,
+            "max": 117
+          },
+          "task": {
+            "median": 8,
+            "min": 8,
+            "max": 8
+          },
+          "tool_schemas": {
+            "median": 117,
+            "min": 117,
+            "max": 117
+          },
+          "system": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "scaffold": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "history": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "episode": {
+          "total": {
+            "median": 293,
+            "min": 293,
+            "max": 293
+          },
+          "overhead": {
+            "median": 277,
+            "min": 277,
+            "max": 277
+          },
+          "task": {
+            "median": 16,
+            "min": 16,
+            "max": 16
+          },
+          "tool_schemas": {
+            "median": 234,
+            "min": 234,
+            "max": 234
+          },
+          "system": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "scaffold": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "history": {
+            "median": 43,
+            "min": 43,
+            "max": 43
+          }
+        },
+        "sample": {
+          "n_requests": 2,
+          "first_request": {
+            "total": 125,
+            "tool_schemas": 117,
+            "system": 0,
+            "history": 0,
+            "scaffold": 0,
+            "task": 8,
+            "overhead": 117,
+            "overhead_pct": 93.6
+          },
+          "episode": {
+            "total": 293,
+            "overhead": 277,
+            "task": 16,
+            "tool_schemas": 234,
+            "system": 0,
+            "history": 43,
+            "scaffold": 0
+          },
+          "per_request": [
+            {
+              "total": 125,
+              "tool_schemas": 117,
+              "system": 0,
+              "history": 0,
+              "scaffold": 0,
+              "task": 8,
+              "overhead": 117,
+              "overhead_pct": 93.6
+            },
+            {
+              "total": 168,
+              "tool_schemas": 117,
+              "system": 0,
+              "history": 43,
+              "scaffold": 0,
+              "task": 8,
+              "overhead": 160,
+              "overhead_pct": 95.2
+            }
+          ]
+        }
+      },
+      "answer_ok": true,
+      "n_runs": 3
+    },
+    {
+      "name": "llamaindex",
+      "display": "llama-index",
+      "homepage": "https://github.com/run-llama/llama_index",
+      "note": "llama-index-core plus the OpenAI LLM binding, not the full meta-package.",
+      "ok": true,
+      "error": "",
+      "n_deps": 66,
+      "install_bytes": 115027390,
+      "import_ms": 695.4,
+      "import_ms_range": [
+        691.3,
+        874.7
+      ],
+      "loc": 47,
+      "install_seconds": 0.0,
+      "tokens": {
+        "n_requests": {
+          "median": 2,
+          "min": 2,
+          "max": 2
+        },
+        "first_request": {
+          "total": {
+            "median": 132,
+            "min": 132,
+            "max": 132
+          },
+          "overhead": {
+            "median": 124,
+            "min": 124,
+            "max": 124
+          },
+          "task": {
+            "median": 8,
+            "min": 8,
+            "max": 8
+          },
+          "tool_schemas": {
+            "median": 124,
+            "min": 124,
+            "max": 124
+          },
+          "system": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "scaffold": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "history": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "episode": {
+          "total": {
+            "median": 308,
+            "min": 308,
+            "max": 308
+          },
+          "overhead": {
+            "median": 292,
+            "min": 292,
+            "max": 292
+          },
+          "task": {
+            "median": 16,
+            "min": 16,
+            "max": 16
+          },
+          "tool_schemas": {
+            "median": 248,
+            "min": 248,
+            "max": 248
+          },
+          "system": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "scaffold": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "history": {
+            "median": 44,
+            "min": 44,
+            "max": 44
+          }
+        },
+        "sample": {
+          "n_requests": 2,
+          "first_request": {
+            "total": 132,
+            "tool_schemas": 124,
+            "system": 0,
+            "history": 0,
+            "scaffold": 0,
+            "task": 8,
+            "overhead": 124,
+            "overhead_pct": 93.9
+          },
+          "episode": {
+            "total": 308,
+            "overhead": 292,
+            "task": 16,
+            "tool_schemas": 248,
+            "system": 0,
+            "history": 44,
+            "scaffold": 0
+          },
+          "per_request": [
+            {
+              "total": 132,
+              "tool_schemas": 124,
+              "system": 0,
+              "history": 0,
+              "scaffold": 0,
+              "task": 8,
+              "overhead": 124,
+              "overhead_pct": 93.9
+            },
+            {
+              "total": 176,
+              "tool_schemas": 124,
+              "system": 0,
+              "history": 44,
+              "scaffold": 0,
+              "task": 8,
+              "overhead": 168,
+              "overhead_pct": 95.5
+            }
+          ]
+        }
+      },
+      "answer_ok": true,
+      "n_runs": 3
+    },
+    {
+      "name": "openai_sdk",
+      "display": "openai (SDK only)",
+      "homepage": "https://github.com/openai/openai-python",
+      "note": "The official client with a hand-written loop. No agent framework.",
+      "ok": true,
+      "error": "",
+      "n_deps": 16,
+      "install_bytes": 16009164,
+      "import_ms": 385.3,
+      "import_ms_range": [
+        380.2,
+        497.0
+      ],
+      "loc": 28,
+      "install_seconds": 0.0,
+      "tokens": {
+        "n_requests": {
+          "median": 2,
+          "min": 2,
+          "max": 2
+        },
+        "first_request": {
+          "total": {
+            "median": 125,
+            "min": 125,
+            "max": 125
+          },
+          "overhead": {
+            "median": 117,
+            "min": 117,
+            "max": 117
+          },
+          "task": {
+            "median": 8,
+            "min": 8,
+            "max": 8
+          },
+          "tool_schemas": {
+            "median": 117,
+            "min": 117,
+            "max": 117
+          },
+          "system": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "scaffold": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "history": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "episode": {
+          "total": {
+            "median": 294,
+            "min": 294,
+            "max": 294
+          },
+          "overhead": {
+            "median": 278,
+            "min": 278,
+            "max": 278
+          },
+          "task": {
+            "median": 16,
+            "min": 16,
+            "max": 16
+          },
+          "tool_schemas": {
+            "median": 234,
+            "min": 234,
+            "max": 234
+          },
+          "system": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "scaffold": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "history": {
+            "median": 44,
+            "min": 44,
+            "max": 44
+          }
+        },
+        "sample": {
+          "n_requests": 2,
+          "first_request": {
+            "total": 125,
+            "tool_schemas": 117,
+            "system": 0,
+            "history": 0,
+            "scaffold": 0,
+            "task": 8,
+            "overhead": 117,
+            "overhead_pct": 93.6
+          },
+          "episode": {
+            "total": 294,
+            "overhead": 278,
+            "task": 16,
+            "tool_schemas": 234,
+            "system": 0,
+            "history": 44,
+            "scaffold": 0
+          },
+          "per_request": [
+            {
+              "total": 125,
+              "tool_schemas": 117,
+              "system": 0,
+              "history": 0,
+              "scaffold": 0,
+              "task": 8,
+              "overhead": 117,
+              "overhead_pct": 93.6
+            },
+            {
+              "total": 169,
+              "tool_schemas": 117,
+              "system": 0,
+              "history": 44,
+              "scaffold": 0,
+              "task": 8,
+              "overhead": 161,
+              "overhead_pct": 95.3
+            }
+          ]
+        }
+      },
+      "answer_ok": true,
+      "n_runs": 3
+    },
+    {
+      "name": "pydantic_ai",
+      "display": "pydantic-ai",
+      "homepage": "https://github.com/pydantic/pydantic-ai",
+      "note": "Measured as pydantic-ai-slim, the minimal install the docs recommend.",
+      "ok": true,
+      "error": "",
+      "n_deps": 30,
+      "install_bytes": 30203739,
+      "import_ms": 265.0,
+      "import_ms_range": [
+        258.8,
+        320.3
+      ],
+      "loc": 46,
+      "install_seconds": 0.0,
+      "tokens": {
+        "n_requests": {
+          "median": 2,
+          "min": 2,
+          "max": 2
+        },
+        "first_request": {
+          "total": {
+            "median": 122,
+            "min": 122,
+            "max": 122
+          },
+          "overhead": {
+            "median": 114,
+            "min": 114,
+            "max": 114
+          },
+          "task": {
+            "median": 8,
+            "min": 8,
+            "max": 8
+          },
+          "tool_schemas": {
+            "median": 114,
+            "min": 114,
+            "max": 114
+          },
+          "system": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "scaffold": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "history": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "episode": {
+          "total": {
+            "median": 287,
+            "min": 287,
+            "max": 287
+          },
+          "overhead": {
+            "median": 271,
+            "min": 271,
+            "max": 271
+          },
+          "task": {
+            "median": 16,
+            "min": 16,
+            "max": 16
+          },
+          "tool_schemas": {
+            "median": 228,
+            "min": 228,
+            "max": 228
+          },
+          "system": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "scaffold": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "history": {
+            "median": 43,
+            "min": 43,
+            "max": 43
+          }
+        },
+        "sample": {
+          "n_requests": 2,
+          "first_request": {
+            "total": 122,
+            "tool_schemas": 114,
+            "system": 0,
+            "history": 0,
+            "scaffold": 0,
+            "task": 8,
+            "overhead": 114,
+            "overhead_pct": 93.4
+          },
+          "episode": {
+            "total": 287,
+            "overhead": 271,
+            "task": 16,
+            "tool_schemas": 228,
+            "system": 0,
+            "history": 43,
+            "scaffold": 0
+          },
+          "per_request": [
+            {
+              "total": 122,
+              "tool_schemas": 114,
+              "system": 0,
+              "history": 0,
+              "scaffold": 0,
+              "task": 8,
+              "overhead": 114,
+              "overhead_pct": 93.4
+            },
+            {
+              "total": 165,
+              "tool_schemas": 114,
+              "system": 0,
+              "history": 43,
+              "scaffold": 0,
+              "task": 8,
+              "overhead": 157,
+              "overhead_pct": 95.2
+            }
+          ]
+        }
+      },
+      "answer_ok": true,
+      "n_runs": 3
+    },
+    {
+      "name": "smolagents",
+      "display": "smolagents",
+      "homepage": "https://github.com/huggingface/smolagents",
+      "note": "ToolCallingAgent with the base toolbox disabled, matching the shared task.",
+      "ok": true,
+      "error": "",
+      "n_deps": 38,
+      "install_bytes": 52992547,
+      "import_ms": 273.0,
+      "import_ms_range": [
+        257.2,
+        361.6
+      ],
+      "loc": 59,
+      "install_seconds": 0.0,
+      "tokens": {
+        "n_requests": {
+          "median": 2,
+          "min": 2,
+          "max": 2
+        },
+        "first_request": {
+          "total": {
+            "median": 1066,
+            "min": 1066,
+            "max": 1066
+          },
+          "overhead": {
+            "median": 1058,
+            "min": 1058,
+            "max": 1058
+          },
+          "task": {
+            "median": 8,
+            "min": 8,
+            "max": 8
+          },
+          "tool_schemas": {
+            "median": 169,
+            "min": 169,
+            "max": 169
+          },
+          "system": {
+            "median": 886,
+            "min": 886,
+            "max": 886
+          },
+          "scaffold": {
+            "median": 3,
+            "min": 3,
+            "max": 3
+          },
+          "history": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "episode": {
+          "total": {
+            "median": 2184,
+            "min": 2184,
+            "max": 2184
+          },
+          "overhead": {
+            "median": 2168,
+            "min": 2168,
+            "max": 2168
+          },
+          "task": {
+            "median": 16,
+            "min": 16,
+            "max": 16
+          },
+          "tool_schemas": {
+            "median": 338,
+            "min": 338,
+            "max": 338
+          },
+          "system": {
+            "median": 1772,
+            "min": 1772,
+            "max": 1772
+          },
+          "scaffold": {
+            "median": 17,
+            "min": 17,
+            "max": 17
+          },
+          "history": {
+            "median": 41,
+            "min": 41,
+            "max": 41
+          }
+        },
+        "sample": {
+          "n_requests": 2,
+          "first_request": {
+            "total": 1066,
+            "tool_schemas": 169,
+            "system": 886,
+            "history": 0,
+            "scaffold": 3,
+            "task": 8,
+            "overhead": 1058,
+            "overhead_pct": 99.2
+          },
+          "episode": {
+            "total": 2184,
+            "overhead": 2168,
+            "task": 16,
+            "tool_schemas": 338,
+            "system": 1772,
+            "history": 41,
+            "scaffold": 17
+          },
+          "per_request": [
+            {
+              "total": 1066,
+              "tool_schemas": 169,
+              "system": 886,
+              "history": 0,
+              "scaffold": 3,
+              "task": 8,
+              "overhead": 1058,
+              "overhead_pct": 99.2
+            },
+            {
+              "total": 1118,
+              "tool_schemas": 169,
+              "system": 886,
+              "history": 41,
+              "scaffold": 14,
+              "task": 8,
+              "overhead": 1110,
+              "overhead_pct": 99.3
+            }
+          ]
+        }
+      },
+      "answer_ok": true,
+      "n_runs": 3
+    },
+    {
+      "name": "stdlib",
+      "display": "stdlib (urllib)",
+      "homepage": "https://docs.python.org/3/library/urllib.request.html",
+      "note": "Zero dependencies. The floor against which everything else is measured.",
+      "ok": true,
+      "error": "",
+      "n_deps": 0,
+      "install_bytes": 4360,
+      "import_ms": null,
+      "import_ms_range": [],
+      "loc": 37,
+      "install_seconds": 0.0,
+      "tokens": {
+        "n_requests": {
+          "median": 2,
+          "min": 2,
+          "max": 2
+        },
+        "first_request": {
+          "total": {
+            "median": 125,
+            "min": 125,
+            "max": 125
+          },
+          "overhead": {
+            "median": 117,
+            "min": 117,
+            "max": 117
+          },
+          "task": {
+            "median": 8,
+            "min": 8,
+            "max": 8
+          },
+          "tool_schemas": {
+            "median": 117,
+            "min": 117,
+            "max": 117
+          },
+          "system": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "scaffold": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "history": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "episode": {
+          "total": {
+            "median": 293,
+            "min": 293,
+            "max": 293
+          },
+          "overhead": {
+            "median": 277,
+            "min": 277,
+            "max": 277
+          },
+          "task": {
+            "median": 16,
+            "min": 16,
+            "max": 16
+          },
+          "tool_schemas": {
+            "median": 234,
+            "min": 234,
+            "max": 234
+          },
+          "system": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "scaffold": {
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "history": {
+            "median": 43,
+            "min": 43,
+            "max": 43
+          }
+        },
+        "sample": {
+          "n_requests": 2,
+          "first_request": {
+            "total": 125,
+            "tool_schemas": 117,
+            "system": 0,
+            "history": 0,
+            "scaffold": 0,
+            "task": 8,
+            "overhead": 117,
+            "overhead_pct": 93.6
+          },
+          "episode": {
+            "total": 293,
+            "overhead": 277,
+            "task": 16,
+            "tool_schemas": 234,
+            "system": 0,
+            "history": 43,
+            "scaffold": 0
+          },
+          "per_request": [
+            {
+              "total": 125,
+              "tool_schemas": 117,
+              "system": 0,
+              "history": 0,
+              "scaffold": 0,
+              "task": 8,
+              "overhead": 117,
+              "overhead_pct": 93.6
+            },
+            {
+              "total": 168,
+              "tool_schemas": 117,
+              "system": 0,
+              "history": 43,
+              "scaffold": 0,
+              "task": 8,
+              "overhead": 160,
+              "overhead_pct": 95.2
+            }
+          ]
+        }
+      },
+      "answer_ok": true,
+      "n_runs": 3
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "stdlib",
+  "display": "stdlib (urllib)",
+  "homepage": "https://docs.python.org/3/library/urllib.request.html",
+  "import_module": null,
+  "note": "Zero dependencies. The floor against which everything else is measured."
+}

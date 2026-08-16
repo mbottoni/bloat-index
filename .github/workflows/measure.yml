@@ -1,0 +1,71 @@
+name: measure
+
+# The tables in README.md are generated. Refreshing them on a schedule is the
+# point of the project: frameworks change, and a benchmark nobody re-runs is
+# just a screenshot with extra steps.
+on:
+  schedule:
+    - cron: "17 4 * * 1"   # Mondays, 04:17 UTC
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "adapters/**"
+      - "bloatindex/**"
+      - ".github/workflows/measure.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: measure-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Build harness environment
+        run: |
+          uv venv .venv --python 3.12
+          uv pip install --python .venv/bin/python tiktoken
+
+      - name: Measure (2 tools)
+        run: .venv/bin/python -m bloatindex.measure --tools 2 --repeats 3
+
+      - name: Measure (12 tools)
+        run: .venv/bin/python -m bloatindex.measure --tools 12 --repeats 3
+
+      - name: Regenerate README
+        run: .venv/bin/python -m bloatindex.report
+
+      - name: Upload raw captures
+        uses: actions/upload-artifact@v4
+        with:
+          name: raw-requests
+          path: results/raw/
+          retention-days: 30
+
+      # On a PR we only want to know whether the harness still runs; the
+      # committed numbers must come from one machine measuring every adapter
+      # in the same pass, so scheduled runs on main are the source of truth.
+      - name: Commit refreshed results
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md results/
+          if git diff --staged --quiet; then
+            echo "no change"
+          else
+            git commit -m "chore: refresh measurements"
+            git push
+          fi

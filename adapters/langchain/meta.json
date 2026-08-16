@@ -1,0 +1,7 @@
+{
+  "name": "langchain",
+  "display": "langchain + langgraph",
+  "homepage": "https://github.com/langchain-ai/langchain",
+  "import_module": "langgraph.prebuilt",
+  "note": "Prebuilt ReAct agent, the path the documentation steers you to."
+}

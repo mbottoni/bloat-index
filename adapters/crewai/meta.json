@@ -1,0 +1,7 @@
+{
+  "name": "crewai",
+  "display": "crewai",
+  "homepage": "https://github.com/crewAIInc/crewAI",
+  "import_module": "crewai",
+  "note": "Role/goal/backstory fields are mandatory, and are kept as short as the API allows."
+}
