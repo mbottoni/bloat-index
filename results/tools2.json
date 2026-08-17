@@ -270,14 +270,14 @@
       "ok": true,
       "error": "",
       "n_deps": 135,
-      "install_bytes": 580690200,
-      "import_ms": 1424.3,
+      "install_bytes": 675764442,
+      "import_ms": 1879.8,
       "import_ms_range": [
-        1368.3,
-        1837.2
+        1870.2,
+        3773.3
       ],
       "loc": 51,
-      "install_seconds": 0.1,
+      "install_seconds": 3.9,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -414,14 +414,14 @@
       "ok": true,
       "error": "",
       "n_deps": 45,
-      "install_bytes": 37931715,
-      "import_ms": 425.5,
+      "install_bytes": 65118655,
+      "import_ms": 450.5,
       "import_ms_range": [
-        380.3,
-        589.8
+        446.6,
+        1287.2
       ],
       "loc": 51,
-      "install_seconds": 0.1,
+      "install_seconds": 0.5,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -558,14 +558,14 @@
       "ok": true,
       "error": "",
       "n_deps": 66,
-      "install_bytes": 115027390,
-      "import_ms": 695.4,
+      "install_bytes": 175061864,
+      "import_ms": 856.1,
       "import_ms_range": [
-        691.3,
-        874.7
+        849.3,
+        2247.4
       ],
       "loc": 47,
-      "install_seconds": 0.0,
+      "install_seconds": 0.5,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -702,14 +702,14 @@
       "ok": true,
       "error": "",
       "n_deps": 16,
-      "install_bytes": 16009164,
-      "import_ms": 385.3,
+      "install_bytes": 16697379,
+      "import_ms": 467.3,
       "import_ms_range": [
-        380.2,
-        497.0
+        463.1,
+        909.3
       ],
       "loc": 28,
-      "install_seconds": 0.0,
+      "install_seconds": 0.1,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -846,14 +846,14 @@
       "ok": true,
       "error": "",
       "n_deps": 30,
-      "install_bytes": 30203739,
-      "import_ms": 265.0,
+      "install_bytes": 33116311,
+      "import_ms": 325.3,
       "import_ms_range": [
-        258.8,
-        320.3
+        324.4,
+        848.3
       ],
       "loc": 46,
-      "install_seconds": 0.0,
+      "install_seconds": 0.2,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -990,14 +990,14 @@
       "ok": true,
       "error": "",
       "n_deps": 38,
-      "install_bytes": 52992547,
-      "import_ms": 273.0,
+      "install_bytes": 66371752,
+      "import_ms": 288.9,
       "import_ms_range": [
-        257.2,
-        361.6
+        287.4,
+        959.9
       ],
       "loc": 59,
-      "install_seconds": 0.0,
+      "install_seconds": 0.2,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -1134,7 +1134,7 @@
       "ok": true,
       "error": "",
       "n_deps": 0,
-      "install_bytes": 4360,
+      "install_bytes": 5264,
       "import_ms": null,
       "import_ms_range": [],
       "loc": 37,
