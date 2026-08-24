@@ -270,14 +270,14 @@
       "ok": true,
       "error": "",
       "n_deps": 135,
-      "install_bytes": 675764442,
-      "import_ms": 1879.8,
+      "install_bytes": 684402555,
+      "import_ms": 2518.6,
       "import_ms_range": [
-        1870.2,
-        3773.3
+        2457.8,
+        4541.4
       ],
       "loc": 51,
-      "install_seconds": 3.9,
+      "install_seconds": 3.5,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -413,15 +413,15 @@
       "note": "Prebuilt ReAct agent, the path the documentation steers you to.",
       "ok": true,
       "error": "",
-      "n_deps": 45,
-      "install_bytes": 65118655,
-      "import_ms": 450.5,
+      "n_deps": 44,
+      "install_bytes": 65330665,
+      "import_ms": 611.2,
       "import_ms_range": [
-        446.6,
-        1287.2
+        605.6,
+        1684.1
       ],
       "loc": 51,
-      "install_seconds": 0.5,
+      "install_seconds": 1.2,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -558,14 +558,14 @@
       "ok": true,
       "error": "",
       "n_deps": 66,
-      "install_bytes": 175061864,
-      "import_ms": 856.1,
+      "install_bytes": 175374297,
+      "import_ms": 1141.9,
       "import_ms_range": [
-        849.3,
-        2247.4
+        1127.2,
+        2867.5
       ],
       "loc": 47,
-      "install_seconds": 0.5,
+      "install_seconds": 0.6,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -701,12 +701,12 @@
       "note": "The official client with a hand-written loop. No agent framework.",
       "ok": true,
       "error": "",
-      "n_deps": 16,
-      "install_bytes": 16697379,
-      "import_ms": 467.3,
+      "n_deps": 14,
+      "install_bytes": 16479985,
+      "import_ms": 659.0,
       "import_ms_range": [
-        463.1,
-        909.3
+        655.6,
+        1222.9
       ],
       "loc": 28,
       "install_seconds": 0.1,
@@ -845,15 +845,15 @@
       "note": "Measured as pydantic-ai-slim, the minimal install the docs recommend.",
       "ok": true,
       "error": "",
-      "n_deps": 30,
-      "install_bytes": 33116311,
-      "import_ms": 325.3,
+      "n_deps": 26,
+      "install_bytes": 32679344,
+      "import_ms": 438.7,
       "import_ms_range": [
-        324.4,
-        848.3
+        434.8,
+        1132.6
       ],
       "loc": 46,
-      "install_seconds": 0.2,
+      "install_seconds": 0.3,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -989,12 +989,12 @@
       "note": "ToolCallingAgent with the base toolbox disabled, matching the shared task.",
       "ok": true,
       "error": "",
-      "n_deps": 38,
-      "install_bytes": 66371752,
-      "import_ms": 288.9,
+      "n_deps": 37,
+      "install_bytes": 66521117,
+      "import_ms": 369.3,
       "import_ms_range": [
-        287.4,
-        959.9
+        368.9,
+        1190.4
       ],
       "loc": 59,
       "install_seconds": 0.2,

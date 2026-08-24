@@ -270,11 +270,11 @@
       "ok": true,
       "error": "",
       "n_deps": 135,
-      "install_bytes": 675764442,
-      "import_ms": 1877.8,
+      "install_bytes": 684402555,
+      "import_ms": 2538.1,
       "import_ms_range": [
-        1866.9,
-        1880.6
+        2512.0,
+        2548.8
       ],
       "loc": 51,
       "install_seconds": 0.0,
@@ -413,12 +413,12 @@
       "note": "Prebuilt ReAct agent, the path the documentation steers you to.",
       "ok": true,
       "error": "",
-      "n_deps": 45,
-      "install_bytes": 65118655,
-      "import_ms": 449.8,
+      "n_deps": 44,
+      "install_bytes": 65330665,
+      "import_ms": 631.3,
       "import_ms_range": [
-        449.1,
-        450.6
+        622.7,
+        632.4
       ],
       "loc": 51,
       "install_seconds": 0.0,
@@ -558,11 +558,11 @@
       "ok": true,
       "error": "",
       "n_deps": 66,
-      "install_bytes": 175061864,
-      "import_ms": 855.4,
+      "install_bytes": 175374297,
+      "import_ms": 1131.5,
       "import_ms_range": [
-        854.5,
-        857.2
+        1129.1,
+        1146.4
       ],
       "loc": 47,
       "install_seconds": 0.0,
@@ -701,12 +701,12 @@
       "note": "The official client with a hand-written loop. No agent framework.",
       "ok": true,
       "error": "",
-      "n_deps": 16,
-      "install_bytes": 16697379,
-      "import_ms": 464.8,
+      "n_deps": 14,
+      "install_bytes": 16479985,
+      "import_ms": 661.0,
       "import_ms_range": [
-        460.4,
-        466.2
+        656.1,
+        661.4
       ],
       "loc": 28,
       "install_seconds": 0.0,
@@ -845,12 +845,12 @@
       "note": "Measured as pydantic-ai-slim, the minimal install the docs recommend.",
       "ok": true,
       "error": "",
-      "n_deps": 30,
-      "install_bytes": 33116311,
-      "import_ms": 326.1,
+      "n_deps": 26,
+      "install_bytes": 32679344,
+      "import_ms": 446.7,
       "import_ms_range": [
-        324.0,
-        326.3
+        443.4,
+        464.3
       ],
       "loc": 46,
       "install_seconds": 0.0,
@@ -989,12 +989,12 @@
       "note": "ToolCallingAgent with the base toolbox disabled, matching the shared task.",
       "ok": true,
       "error": "",
-      "n_deps": 38,
-      "install_bytes": 66371752,
-      "import_ms": 286.0,
+      "n_deps": 37,
+      "install_bytes": 66521117,
+      "import_ms": 372.2,
       "import_ms_range": [
-        285.7,
-        287.0
+        369.9,
+        379.8
       ],
       "loc": 59,
       "install_seconds": 0.0,
