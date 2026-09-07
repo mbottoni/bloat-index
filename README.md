@@ -25,13 +25,13 @@ One task. Two tools. `overhead tokens` is every token in the first request that 
 <!-- BEGIN:TABLE_MAIN -->
 | framework | deps | install | import | LOC | overhead tokens | overhead % | episode tokens |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| [pydantic-ai](https://github.com/pydantic/pydantic-ai) | 26 | 33 MB | 464 ms | 46 | 114 | 93% | 287 |
-| [langchain + langgraph](https://github.com/langchain-ai/langchain) | 44 | 65 MB | 622 ms | 51 | 117 | 94% | 293 |
-| [openai (SDK only)](https://github.com/openai/openai-python) | 14 | 16 MB | 671 ms | 28 | 117 | 94% | 294 |
+| [pydantic-ai](https://github.com/pydantic/pydantic-ai) | 26 | 34 MB | 469 ms | 46 | 114 | 93% | 287 |
+| [langchain + langgraph](https://github.com/langchain-ai/langchain) | 44 | 66 MB | 596 ms | 51 | 117 | 94% | 293 |
+| [openai (SDK only)](https://github.com/openai/openai-python) | 14 | 17 MB | 667 ms | 28 | 117 | 94% | 294 |
 | [stdlib (urllib)](https://docs.python.org/3/library/urllib.request.html) | 0 | 5 kB | -- | 37 | 117 | 94% | 293 |
-| [llama-index](https://github.com/run-llama/llama_index) | 67 | 176 MB | 1.13 s | 47 | 124 | 94% | 308 |
-| [crewai](https://github.com/crewAIInc/crewAI) | 134 | 685 MB | 2.61 s | 51 | 192 | 96% | 443 |
-| [smolagents](https://github.com/huggingface/smolagents) | 37 | 67 MB | 381 ms | 59 | 1,058 | 99% | 2,184 |
+| [llama-index](https://github.com/run-llama/llama_index) | 67 | 175 MB | 1.12 s | 47 | 124 | 94% | 308 |
+| [crewai](https://github.com/crewAIInc/crewAI) | 134 | 685 MB | 2.56 s | 51 | 192 | 96% | 443 |
+| [smolagents](https://github.com/huggingface/smolagents) | 37 | 67 MB | 359 ms | 59 | 1,058 | 99% | 2,184 |
 <!-- END:TABLE_MAIN -->
 
 `episode tokens` is the whole run — the first request plus every turn re-sent afterwards.
