@@ -270,11 +270,11 @@
       "ok": true,
       "error": "",
       "n_deps": 134,
-      "install_bytes": 685014313,
-      "import_ms": 2538.5,
+      "install_bytes": 686424625,
+      "import_ms": 2559.8,
       "import_ms_range": [
-        2502.3,
-        2544.8
+        2531.8,
+        2600.5
       ],
       "loc": 51,
       "install_seconds": 0.0,
@@ -414,11 +414,11 @@
       "ok": true,
       "error": "",
       "n_deps": 44,
-      "install_bytes": 65538165,
-      "import_ms": 600.7,
+      "install_bytes": 66465565,
+      "import_ms": 631.8,
       "import_ms_range": [
-        597.2,
-        609.0
+        628.9,
+        636.6
       ],
       "loc": 51,
       "install_seconds": 0.0,
@@ -558,11 +558,11 @@
       "ok": true,
       "error": "",
       "n_deps": 67,
-      "install_bytes": 174892488,
-      "import_ms": 1121.3,
+      "install_bytes": 174969946,
+      "import_ms": 1205.3,
       "import_ms_range": [
-        1119.4,
-        1143.5
+        1162.9,
+        1250.5
       ],
       "loc": 47,
       "install_seconds": 0.0,
@@ -702,11 +702,11 @@
       "ok": true,
       "error": "",
       "n_deps": 14,
-      "install_bytes": 16582516,
-      "import_ms": 668.6,
+      "install_bytes": 17465038,
+      "import_ms": 750.2,
       "import_ms_range": [
-        662.6,
-        671.9
+        735.2,
+        756.6
       ],
       "loc": 28,
       "install_seconds": 0.0,
@@ -846,11 +846,11 @@
       "ok": true,
       "error": "",
       "n_deps": 26,
-      "install_bytes": 33606805,
-      "import_ms": 475.9,
+      "install_bytes": 34777872,
+      "import_ms": 485.6,
       "import_ms_range": [
-        469.9,
-        487.9
+        481.9,
+        492.8
       ],
       "loc": 46,
       "install_seconds": 0.0,
@@ -990,11 +990,11 @@
       "ok": true,
       "error": "",
       "n_deps": 37,
-      "install_bytes": 66660847,
-      "import_ms": 352.3,
+      "install_bytes": 67548936,
+      "import_ms": 365.6,
       "import_ms_range": [
-        349.3,
-        353.6
+        360.1,
+        370.7
       ],
       "loc": 59,
       "install_seconds": 0.0,
