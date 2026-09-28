@@ -269,12 +269,12 @@
       "note": "Role/goal/backstory fields are mandatory, and are kept as short as the API allows.",
       "ok": true,
       "error": "",
-      "n_deps": 134,
-      "install_bytes": 687793271,
-      "import_ms": 2132.7,
+      "n_deps": 136,
+      "install_bytes": 687974547,
+      "import_ms": 2557.8,
       "import_ms_range": [
-        2109.2,
-        2159.1
+        2542.6,
+        2591.4
       ],
       "loc": 51,
       "install_seconds": 0.0,
@@ -414,11 +414,11 @@
       "ok": true,
       "error": "",
       "n_deps": 44,
-      "install_bytes": 66798062,
-      "import_ms": 530.6,
+      "install_bytes": 66969194,
+      "import_ms": 628.7,
       "import_ms_range": [
-        528.3,
-        535.5
+        620.3,
+        639.5
       ],
       "loc": 51,
       "install_seconds": 0.0,
@@ -558,11 +558,11 @@
       "ok": true,
       "error": "",
       "n_deps": 67,
-      "install_bytes": 176138639,
-      "import_ms": 1012.1,
+      "install_bytes": 181035159,
+      "import_ms": 1162.8,
       "import_ms_range": [
-        997.4,
-        1022.0
+        1153.6,
+        1181.1
       ],
       "loc": 47,
       "install_seconds": 0.0,
@@ -702,11 +702,11 @@
       "ok": true,
       "error": "",
       "n_deps": 14,
-      "install_bytes": 17687052,
-      "import_ms": 372.7,
+      "install_bytes": 17760809,
+      "import_ms": 438.3,
       "import_ms_range": [
-        368.8,
-        374.3
+        434.2,
+        439.6
       ],
       "loc": 28,
       "install_seconds": 0.0,
@@ -846,11 +846,11 @@
       "ok": true,
       "error": "",
       "n_deps": 26,
-      "install_bytes": 35474427,
-      "import_ms": 427.5,
+      "install_bytes": 35839731,
+      "import_ms": 479.5,
       "import_ms_range": [
-        422.4,
-        435.2
+        473.9,
+        493.5
       ],
       "loc": 46,
       "install_seconds": 0.0,
@@ -989,12 +989,12 @@
       "note": "ToolCallingAgent with the base toolbox disabled, matching the shared task.",
       "ok": true,
       "error": "",
-      "n_deps": 37,
-      "install_bytes": 68022053,
-      "import_ms": 307.8,
+      "n_deps": 35,
+      "install_bytes": 67463790,
+      "import_ms": 346.9,
       "import_ms_range": [
-        304.6,
-        308.4
+        343.5,
+        349.6
       ],
       "loc": 59,
       "install_seconds": 0.0,
