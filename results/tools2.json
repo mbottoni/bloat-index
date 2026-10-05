@@ -270,14 +270,14 @@
       "ok": true,
       "error": "",
       "n_deps": 136,
-      "install_bytes": 687974547,
-      "import_ms": 2600.7,
+      "install_bytes": 696212833,
+      "import_ms": 2661.1,
       "import_ms_range": [
-        2584.9,
-        4803.6
+        2641.5,
+        5486.6
       ],
       "loc": 51,
-      "install_seconds": 1.7,
+      "install_seconds": 2.5,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -414,11 +414,11 @@
       "ok": true,
       "error": "",
       "n_deps": 44,
-      "install_bytes": 66969194,
-      "import_ms": 625.3,
+      "install_bytes": 67231293,
+      "import_ms": 599.2,
       "import_ms_range": [
-        623.4,
-        1755.6
+        589.7,
+        1659.1
       ],
       "loc": 51,
       "install_seconds": 0.5,
@@ -558,14 +558,14 @@
       "ok": true,
       "error": "",
       "n_deps": 67,
-      "install_bytes": 181035159,
-      "import_ms": 1164.6,
+      "install_bytes": 181102482,
+      "import_ms": 1175.9,
       "import_ms_range": [
-        1140.9,
-        2988.6
+        1161.2,
+        2964.9
       ],
       "loc": 47,
-      "install_seconds": 0.6,
+      "install_seconds": 0.7,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -702,11 +702,11 @@
       "ok": true,
       "error": "",
       "n_deps": 14,
-      "install_bytes": 17760809,
-      "import_ms": 449.0,
+      "install_bytes": 17962411,
+      "import_ms": 452.6,
       "import_ms_range": [
-        440.3,
-        894.4
+        449.7,
+        882.0
       ],
       "loc": 28,
       "install_seconds": 0.1,
@@ -846,14 +846,14 @@
       "ok": true,
       "error": "",
       "n_deps": 26,
-      "install_bytes": 35839731,
-      "import_ms": 484.0,
+      "install_bytes": 36674138,
+      "import_ms": 500.8,
       "import_ms_range": [
-        482.0,
-        1213.5
+        494.7,
+        1235.5
       ],
       "loc": 46,
-      "install_seconds": 0.3,
+      "install_seconds": 0.4,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -990,11 +990,11 @@
       "ok": true,
       "error": "",
       "n_deps": 35,
-      "install_bytes": 67463790,
-      "import_ms": 349.2,
+      "install_bytes": 67752696,
+      "import_ms": 356.3,
       "import_ms_range": [
-        342.7,
-        1098.0
+        351.0,
+        1112.5
       ],
       "loc": 59,
       "install_seconds": 0.3,
