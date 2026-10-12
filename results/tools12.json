@@ -269,12 +269,12 @@
       "note": "Role/goal/backstory fields are mandatory, and are kept as short as the API allows.",
       "ok": true,
       "error": "",
-      "n_deps": 136,
-      "install_bytes": 696212833,
-      "import_ms": 2670.8,
+      "n_deps": 137,
+      "install_bytes": 716236938,
+      "import_ms": 2291.6,
       "import_ms_range": [
-        2658.5,
-        2682.5
+        2277.8,
+        2338.3
       ],
       "loc": 51,
       "install_seconds": 0.0,
@@ -414,11 +414,11 @@
       "ok": true,
       "error": "",
       "n_deps": 44,
-      "install_bytes": 67231293,
-      "import_ms": 595.5,
+      "install_bytes": 67921931,
+      "import_ms": 546.1,
       "import_ms_range": [
-        590.9,
-        609.8
+        543.6,
+        561.2
       ],
       "loc": 51,
       "install_seconds": 0.0,
@@ -558,11 +558,11 @@
       "ok": true,
       "error": "",
       "n_deps": 67,
-      "install_bytes": 181102482,
-      "import_ms": 1151.5,
+      "install_bytes": 182480647,
+      "import_ms": 1018.5,
       "import_ms_range": [
-        1144.3,
-        1159.3
+        1009.7,
+        1019.8
       ],
       "loc": 47,
       "install_seconds": 0.0,
@@ -702,11 +702,11 @@
       "ok": true,
       "error": "",
       "n_deps": 14,
-      "install_bytes": 17962411,
-      "import_ms": 442.6,
+      "install_bytes": 18362220,
+      "import_ms": 393.5,
       "import_ms_range": [
-        437.7,
-        446.2
+        391.8,
+        399.2
       ],
       "loc": 28,
       "install_seconds": 0.0,
@@ -846,11 +846,11 @@
       "ok": true,
       "error": "",
       "n_deps": 26,
-      "install_bytes": 36674138,
-      "import_ms": 481.4,
+      "install_bytes": 37452638,
+      "import_ms": 451.6,
       "import_ms_range": [
-        475.9,
-        497.2
+        449.9,
+        451.7
       ],
       "loc": 46,
       "install_seconds": 0.0,
@@ -990,11 +990,11 @@
       "ok": true,
       "error": "",
       "n_deps": 35,
-      "install_bytes": 67752696,
-      "import_ms": 342.6,
+      "install_bytes": 67295479,
+      "import_ms": 321.8,
       "import_ms_range": [
-        341.1,
-        343.4
+        319.8,
+        324.6
       ],
       "loc": 59,
       "install_seconds": 0.0,
@@ -1134,7 +1134,7 @@
       "ok": true,
       "error": "",
       "n_deps": 0,
-      "install_bytes": 5264,
+      "install_bytes": 0,
       "import_ms": null,
       "import_ms_range": [],
       "loc": 37,

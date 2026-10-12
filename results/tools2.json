@@ -269,15 +269,15 @@
       "note": "Role/goal/backstory fields are mandatory, and are kept as short as the API allows.",
       "ok": true,
       "error": "",
-      "n_deps": 136,
-      "install_bytes": 696212833,
-      "import_ms": 2661.1,
+      "n_deps": 137,
+      "install_bytes": 716236938,
+      "import_ms": 2367.2,
       "import_ms_range": [
-        2641.5,
-        5486.6
+        2327.2,
+        4610.4
       ],
       "loc": 51,
-      "install_seconds": 2.5,
+      "install_seconds": 2.1,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -414,14 +414,14 @@
       "ok": true,
       "error": "",
       "n_deps": 44,
-      "install_bytes": 67231293,
-      "import_ms": 599.2,
+      "install_bytes": 67921931,
+      "import_ms": 553.7,
       "import_ms_range": [
-        589.7,
-        1659.1
+        544.3,
+        1621.8
       ],
       "loc": 51,
-      "install_seconds": 0.5,
+      "install_seconds": 0.3,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -558,14 +558,14 @@
       "ok": true,
       "error": "",
       "n_deps": 67,
-      "install_bytes": 181102482,
-      "import_ms": 1175.9,
+      "install_bytes": 182480647,
+      "import_ms": 1023.3,
       "import_ms_range": [
-        1161.2,
-        2964.9
+        1014.6,
+        2791.2
       ],
       "loc": 47,
-      "install_seconds": 0.7,
+      "install_seconds": 0.4,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -702,14 +702,14 @@
       "ok": true,
       "error": "",
       "n_deps": 14,
-      "install_bytes": 17962411,
-      "import_ms": 452.6,
+      "install_bytes": 18362220,
+      "import_ms": 396.6,
       "import_ms_range": [
-        449.7,
-        882.0
+        395.5,
+        799.2
       ],
       "loc": 28,
-      "install_seconds": 0.1,
+      "install_seconds": 0.0,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -846,14 +846,14 @@
       "ok": true,
       "error": "",
       "n_deps": 26,
-      "install_bytes": 36674138,
-      "import_ms": 500.8,
+      "install_bytes": 37452638,
+      "import_ms": 451.6,
       "import_ms_range": [
-        494.7,
-        1235.5
+        447.7,
+        1158.4
       ],
       "loc": 46,
-      "install_seconds": 0.4,
+      "install_seconds": 0.3,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -990,14 +990,14 @@
       "ok": true,
       "error": "",
       "n_deps": 35,
-      "install_bytes": 67752696,
-      "import_ms": 356.3,
+      "install_bytes": 67295479,
+      "import_ms": 320.6,
       "import_ms_range": [
-        351.0,
-        1112.5
+        317.6,
+        1053.7
       ],
       "loc": 59,
-      "install_seconds": 0.3,
+      "install_seconds": 0.1,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -1134,7 +1134,7 @@
       "ok": true,
       "error": "",
       "n_deps": 0,
-      "install_bytes": 5264,
+      "install_bytes": 0,
       "import_ms": null,
       "import_ms_range": [],
       "loc": 37,
