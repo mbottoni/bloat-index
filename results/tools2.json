@@ -270,14 +270,14 @@
       "ok": true,
       "error": "",
       "n_deps": 137,
-      "install_bytes": 719957188,
-      "import_ms": 2788.3,
+      "install_bytes": 785626151,
+      "import_ms": 2767.6,
       "import_ms_range": [
-        2777.4,
-        5269.4
+        2700.5,
+        4934.3
       ],
       "loc": 51,
-      "install_seconds": 2.4,
+      "install_seconds": 2.0,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -414,14 +414,14 @@
       "ok": true,
       "error": "",
       "n_deps": 44,
-      "install_bytes": 68649906,
-      "import_ms": 615.0,
+      "install_bytes": 68947202,
+      "import_ms": 640.6,
       "import_ms_range": [
-        599.6,
-        1700.2
+        618.1,
+        1702.6
       ],
       "loc": 51,
-      "install_seconds": 0.6,
+      "install_seconds": 0.4,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -558,14 +558,14 @@
       "ok": true,
       "error": "",
       "n_deps": 67,
-      "install_bytes": 183239747,
-      "import_ms": 1111.8,
+      "install_bytes": 183350281,
+      "import_ms": 1125.7,
       "import_ms_range": [
-        1101.9,
-        2860.8
+        1120.0,
+        2983.0
       ],
       "loc": 47,
-      "install_seconds": 0.8,
+      "install_seconds": 0.4,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -702,11 +702,11 @@
       "ok": true,
       "error": "",
       "n_deps": 14,
-      "install_bytes": 18840263,
-      "import_ms": 446.7,
+      "install_bytes": 18921646,
+      "import_ms": 458.0,
       "import_ms_range": [
-        438.0,
-        876.0
+        451.2,
+        889.2
       ],
       "loc": 28,
       "install_seconds": 0.1,
@@ -846,14 +846,14 @@
       "ok": true,
       "error": "",
       "n_deps": 26,
-      "install_bytes": 38188574,
-      "import_ms": 481.7,
+      "install_bytes": 39295639,
+      "import_ms": 498.2,
       "import_ms_range": [
-        476.5,
-        1190.4
+        495.3,
+        1241.4
       ],
       "loc": 46,
-      "install_seconds": 0.4,
+      "install_seconds": 0.2,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -899,14 +899,14 @@
         },
         "episode": {
           "total": {
-            "median": 287,
-            "min": 287,
-            "max": 287
+            "median": 286,
+            "min": 286,
+            "max": 286
           },
           "overhead": {
-            "median": 271,
-            "min": 271,
-            "max": 271
+            "median": 270,
+            "min": 270,
+            "max": 270
           },
           "task": {
             "median": 16,
@@ -929,9 +929,9 @@
             "max": 0
           },
           "history": {
-            "median": 43,
-            "min": 43,
-            "max": 43
+            "median": 42,
+            "min": 42,
+            "max": 42
           }
         },
         "sample": {
@@ -947,12 +947,12 @@
             "overhead_pct": 93.4
           },
           "episode": {
-            "total": 287,
-            "overhead": 271,
+            "total": 286,
+            "overhead": 270,
             "task": 16,
             "tool_schemas": 228,
             "system": 0,
-            "history": 43,
+            "history": 42,
             "scaffold": 0
           },
           "per_request": [
@@ -967,14 +967,14 @@
               "overhead_pct": 93.4
             },
             {
-              "total": 165,
+              "total": 164,
               "tool_schemas": 114,
               "system": 0,
-              "history": 43,
+              "history": 42,
               "scaffold": 0,
               "task": 8,
-              "overhead": 157,
-              "overhead_pct": 95.2
+              "overhead": 156,
+              "overhead_pct": 95.1
             }
           ]
         }
@@ -990,14 +990,14 @@
       "ok": true,
       "error": "",
       "n_deps": 35,
-      "install_bytes": 68626705,
-      "import_ms": 333.8,
+      "install_bytes": 68763316,
+      "import_ms": 332.1,
       "import_ms_range": [
-        328.9,
-        1057.2
+        331.3,
+        1048.8
       ],
       "loc": 59,
-      "install_seconds": 0.3,
+      "install_seconds": 0.2,
       "tokens": {
         "n_requests": {
           "median": 2,

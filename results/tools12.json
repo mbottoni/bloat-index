@@ -270,11 +270,11 @@
       "ok": true,
       "error": "",
       "n_deps": 137,
-      "install_bytes": 719957188,
-      "import_ms": 2767.6,
+      "install_bytes": 785626151,
+      "import_ms": 2794.1,
       "import_ms_range": [
-        2762.3,
-        2798.9
+        2762.2,
+        2806.9
       ],
       "loc": 51,
       "install_seconds": 0.0,
@@ -414,11 +414,11 @@
       "ok": true,
       "error": "",
       "n_deps": 44,
-      "install_bytes": 68649906,
-      "import_ms": 607.5,
+      "install_bytes": 68947202,
+      "import_ms": 619.6,
       "import_ms_range": [
-        604.4,
-        620.5
+        616.9,
+        625.6
       ],
       "loc": 51,
       "install_seconds": 0.0,
@@ -558,11 +558,11 @@
       "ok": true,
       "error": "",
       "n_deps": 67,
-      "install_bytes": 183239747,
-      "import_ms": 1100.6,
+      "install_bytes": 183350281,
+      "import_ms": 1112.1,
       "import_ms_range": [
-        1095.5,
-        1101.5
+        1109.5,
+        1141.8
       ],
       "loc": 47,
       "install_seconds": 0.0,
@@ -702,11 +702,11 @@
       "ok": true,
       "error": "",
       "n_deps": 14,
-      "install_bytes": 18840263,
-      "import_ms": 445.2,
+      "install_bytes": 18921646,
+      "import_ms": 452.8,
       "import_ms_range": [
-        442.3,
-        446.9
+        451.4,
+        457.1
       ],
       "loc": 28,
       "install_seconds": 0.0,
@@ -846,11 +846,11 @@
       "ok": true,
       "error": "",
       "n_deps": 26,
-      "install_bytes": 38188574,
-      "import_ms": 478.6,
+      "install_bytes": 39295639,
+      "import_ms": 514.7,
       "import_ms_range": [
-        475.5,
-        483.9
+        496.6,
+        529.7
       ],
       "loc": 46,
       "install_seconds": 0.0,
@@ -899,14 +899,14 @@
         },
         "episode": {
           "total": {
-            "median": 1631,
-            "min": 1631,
-            "max": 1631
+            "median": 1630,
+            "min": 1630,
+            "max": 1630
           },
           "overhead": {
-            "median": 1615,
-            "min": 1615,
-            "max": 1615
+            "median": 1614,
+            "min": 1614,
+            "max": 1614
           },
           "task": {
             "median": 16,
@@ -929,9 +929,9 @@
             "max": 0
           },
           "history": {
-            "median": 43,
-            "min": 43,
-            "max": 43
+            "median": 42,
+            "min": 42,
+            "max": 42
           }
         },
         "sample": {
@@ -947,12 +947,12 @@
             "overhead_pct": 99.0
           },
           "episode": {
-            "total": 1631,
-            "overhead": 1615,
+            "total": 1630,
+            "overhead": 1614,
             "task": 16,
             "tool_schemas": 1572,
             "system": 0,
-            "history": 43,
+            "history": 42,
             "scaffold": 0
           },
           "per_request": [
@@ -967,13 +967,13 @@
               "overhead_pct": 99.0
             },
             {
-              "total": 837,
+              "total": 836,
               "tool_schemas": 786,
               "system": 0,
-              "history": 43,
+              "history": 42,
               "scaffold": 0,
               "task": 8,
-              "overhead": 829,
+              "overhead": 828,
               "overhead_pct": 99.0
             }
           ]
@@ -990,11 +990,11 @@
       "ok": true,
       "error": "",
       "n_deps": 35,
-      "install_bytes": 68626705,
-      "import_ms": 330.3,
+      "install_bytes": 68763316,
+      "import_ms": 330.2,
       "import_ms_range": [
-        327.2,
-        332.0
+        329.3,
+        334.1
       ],
       "loc": 59,
       "install_seconds": 0.0,
