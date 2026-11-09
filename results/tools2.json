@@ -270,14 +270,14 @@
       "ok": true,
       "error": "",
       "n_deps": 137,
-      "install_bytes": 789533239,
-      "import_ms": 2574.3,
+      "install_bytes": 793658293,
+      "import_ms": 2371.3,
       "import_ms_range": [
-        2568.3,
-        4836.9
+        2343.6,
+        4574.0
       ],
       "loc": 51,
-      "install_seconds": 2.6,
+      "install_seconds": 2.4,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -414,14 +414,14 @@
       "ok": true,
       "error": "",
       "n_deps": 44,
-      "install_bytes": 69973079,
-      "import_ms": 572.7,
+      "install_bytes": 70350914,
+      "import_ms": 528.3,
       "import_ms_range": [
-        563.1,
-        1571.0
+        525.9,
+        1577.5
       ],
       "loc": 51,
-      "install_seconds": 0.6,
+      "install_seconds": 0.4,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -558,14 +558,14 @@
       "ok": true,
       "error": "",
       "n_deps": 67,
-      "install_bytes": 183547549,
-      "import_ms": 1011.9,
+      "install_bytes": 183620121,
+      "import_ms": 971.2,
       "import_ms_range": [
-        1003.1,
-        2632.2
+        961.0,
+        2685.7
       ],
       "loc": 47,
-      "install_seconds": 0.8,
+      "install_seconds": 0.4,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -702,11 +702,11 @@
       "ok": true,
       "error": "",
       "n_deps": 14,
-      "install_bytes": 19669542,
-      "import_ms": 408.6,
+      "install_bytes": 19943023,
+      "import_ms": 360.2,
       "import_ms_range": [
-        402.5,
-        824.5
+        357.5,
+        761.5
       ],
       "loc": 28,
       "install_seconds": 0.1,
@@ -846,14 +846,14 @@
       "ok": true,
       "error": "",
       "n_deps": 26,
-      "install_bytes": 41245802,
-      "import_ms": 463.5,
+      "install_bytes": 41767012,
+      "import_ms": 464.8,
       "import_ms_range": [
-        461.6,
-        1207.9
+        462.1,
+        1248.5
       ],
       "loc": 46,
-      "install_seconds": 0.4,
+      "install_seconds": 0.3,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -990,14 +990,14 @@
       "ok": true,
       "error": "",
       "n_deps": 35,
-      "install_bytes": 69678672,
-      "import_ms": 303.1,
+      "install_bytes": 69955567,
+      "import_ms": 299.6,
       "import_ms_range": [
-        298.9,
-        957.9
+        298.5,
+        978.4
       ],
       "loc": 59,
-      "install_seconds": 0.3,
+      "install_seconds": 0.2,
       "tokens": {
         "n_requests": {
           "median": 2,
