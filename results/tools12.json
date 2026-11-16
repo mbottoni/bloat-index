@@ -270,11 +270,11 @@
       "ok": true,
       "error": "",
       "n_deps": 137,
-      "install_bytes": 793658293,
-      "import_ms": 2350.6,
+      "install_bytes": 802329283,
+      "import_ms": 2576.1,
       "import_ms_range": [
-        2343.5,
-        2368.5
+        2575.0,
+        2598.9
       ],
       "loc": 51,
       "install_seconds": 0.0,
@@ -414,11 +414,11 @@
       "ok": true,
       "error": "",
       "n_deps": 44,
-      "install_bytes": 70350914,
-      "import_ms": 535.0,
+      "install_bytes": 71492885,
+      "import_ms": 555.6,
       "import_ms_range": [
-        527.7,
-        538.2
+        548.7,
+        559.1
       ],
       "loc": 51,
       "install_seconds": 0.0,
@@ -557,12 +557,12 @@
       "note": "llama-index-core plus the OpenAI LLM binding, not the full meta-package.",
       "ok": true,
       "error": "",
-      "n_deps": 67,
-      "install_bytes": 183620121,
-      "import_ms": 967.3,
+      "n_deps": 69,
+      "install_bytes": 184002132,
+      "import_ms": 983.4,
       "import_ms_range": [
-        946.5,
-        972.8
+        973.5,
+        994.4
       ],
       "loc": 47,
       "install_seconds": 0.0,
@@ -702,11 +702,11 @@
       "ok": true,
       "error": "",
       "n_deps": 14,
-      "install_bytes": 19943023,
-      "import_ms": 361.6,
+      "install_bytes": 19974403,
+      "import_ms": 381.0,
       "import_ms_range": [
-        358.1,
-        367.6
+        376.9,
+        405.5
       ],
       "loc": 28,
       "install_seconds": 0.0,
@@ -846,11 +846,11 @@
       "ok": true,
       "error": "",
       "n_deps": 26,
-      "install_bytes": 41767012,
-      "import_ms": 462.6,
+      "install_bytes": 42280031,
+      "import_ms": 483.7,
       "import_ms_range": [
-        459.9,
-        465.4
+        481.3,
+        488.1
       ],
       "loc": 46,
       "install_seconds": 0.0,
@@ -990,11 +990,11 @@
       "ok": true,
       "error": "",
       "n_deps": 35,
-      "install_bytes": 69955567,
+      "install_bytes": 70500584,
       "import_ms": 297.6,
       "import_ms_range": [
-        294.7,
-        299.0
+        295.1,
+        300.6
       ],
       "loc": 59,
       "install_seconds": 0.0,

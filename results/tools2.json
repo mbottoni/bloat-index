@@ -270,14 +270,14 @@
       "ok": true,
       "error": "",
       "n_deps": 137,
-      "install_bytes": 793658293,
-      "import_ms": 2371.3,
+      "install_bytes": 802329283,
+      "import_ms": 2609.2,
       "import_ms_range": [
-        2343.6,
-        4574.0
+        2559.5,
+        4700.6
       ],
       "loc": 51,
-      "install_seconds": 2.4,
+      "install_seconds": 2.1,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -414,11 +414,11 @@
       "ok": true,
       "error": "",
       "n_deps": 44,
-      "install_bytes": 70350914,
-      "import_ms": 528.3,
+      "install_bytes": 71492885,
+      "import_ms": 553.6,
       "import_ms_range": [
-        525.9,
-        1577.5
+        547.0,
+        1534.8
       ],
       "loc": 51,
       "install_seconds": 0.4,
@@ -557,12 +557,12 @@
       "note": "llama-index-core plus the OpenAI LLM binding, not the full meta-package.",
       "ok": true,
       "error": "",
-      "n_deps": 67,
-      "install_bytes": 183620121,
-      "import_ms": 971.2,
+      "n_deps": 69,
+      "install_bytes": 184002132,
+      "import_ms": 982.4,
       "import_ms_range": [
-        961.0,
-        2685.7
+        978.8,
+        2623.1
       ],
       "loc": 47,
       "install_seconds": 0.4,
@@ -702,11 +702,11 @@
       "ok": true,
       "error": "",
       "n_deps": 14,
-      "install_bytes": 19943023,
-      "import_ms": 360.2,
+      "install_bytes": 19974403,
+      "import_ms": 380.8,
       "import_ms_range": [
-        357.5,
-        761.5
+        376.6,
+        784.4
       ],
       "loc": 28,
       "install_seconds": 0.1,
@@ -846,14 +846,14 @@
       "ok": true,
       "error": "",
       "n_deps": 26,
-      "install_bytes": 41767012,
-      "import_ms": 464.8,
+      "install_bytes": 42280031,
+      "import_ms": 503.4,
       "import_ms_range": [
-        462.1,
-        1248.5
+        479.6,
+        1258.4
       ],
       "loc": 46,
-      "install_seconds": 0.3,
+      "install_seconds": 0.2,
       "tokens": {
         "n_requests": {
           "median": 2,
@@ -990,11 +990,11 @@
       "ok": true,
       "error": "",
       "n_deps": 35,
-      "install_bytes": 69955567,
-      "import_ms": 299.6,
+      "install_bytes": 70500584,
+      "import_ms": 301.1,
       "import_ms_range": [
-        298.5,
-        978.4
+        296.5,
+        946.9
       ],
       "loc": 59,
       "install_seconds": 0.2,
